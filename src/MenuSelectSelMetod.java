@@ -5,7 +5,7 @@ public class MenuSelectSelMetod {
     // 1 Меню выбора метода
     static void choiceOfMethod() throws IOException {
         System.out.println("Укажите какой метод Вы выбрали: ");
-        System.out.println("1) Найти совпадения SKU (введите 1)");
+        System.out.println("1) Найти совпадения по SKU (введите 1)");
         System.out.println("2) Сортировать по совпадению (введите 2)");
         System.out.print("Укажите ваш вариант: ");
 

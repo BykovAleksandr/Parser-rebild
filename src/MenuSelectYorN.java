@@ -1,5 +1,4 @@
 import java.io.IOException;
-import java.sql.SQLOutput;
 
 public class MenuSelectYorN {
 
@@ -9,11 +8,12 @@ public class MenuSelectYorN {
         System.out.print("Через файл/в ручную (Да через файл/Нет в ручную)  (Д/Н): ");
         String inStringValue = ReadingStringIntFile.readerConsolString();
 
-        if (inStringValue.equalsIgnoreCase("Д") || inStringValue.equalsIgnoreCase("L")){
+        if (inStringValue.equalsIgnoreCase("Д") || inStringValue.equalsIgnoreCase("Y")){
             System.out.println("FromFileSetProp");
         }
-        else if (inStringValue.equalsIgnoreCase("Н") || inStringValue.equalsIgnoreCase("Y")){
-            System.out.println("ManuallySetProp");
+        else if (inStringValue.equalsIgnoreCase("Н") || inStringValue.equalsIgnoreCase("L")){
+            System.out.print("Введите количество искомых параметров: ");
+            ManuallSetProp.manuallSetProp();
         }
         else
         {

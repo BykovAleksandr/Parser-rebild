@@ -9,7 +9,7 @@ public class ReadingStringIntFile {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         String inStringValue = reader.readLine();
         return inStringValue;
-        // обработать искючения
+        // обработать искючения:
     }
     //Возвращает инт
     static int readerConsolInt() throws IOException {
