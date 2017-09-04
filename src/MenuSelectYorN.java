@@ -12,8 +12,7 @@ public class MenuSelectYorN {
             System.out.println("FromFileSetProp");
         }
         else if (inStringValue.equalsIgnoreCase("Н") || inStringValue.equalsIgnoreCase("L")){
-            System.out.print("Введите количество искомых параметров: ");
-            ManuallSetProp.manuallSetProp();
+            ManuallSetProp.manuallInitArrayLenth();
         }
         else
         {

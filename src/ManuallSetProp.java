@@ -1,15 +1,22 @@
 import java.io.IOException;
+import java.util.ArrayList;
 
 public class ManuallSetProp {
 
-    public static int[] setPropArray;
+    // Размер массива искомых значений
+    public static int someSerchValue;
+    // Массив искомых хначений, принемающий в виде размера значения someSerchValue введенные с консоли
+    public static ArrayList<String> serchValueArrayList = new ArrayList<>();
 
-    public static void  manuallSetProp() throws IOException {
+    public static void manuallInitArrayLenth() throws IOException {
+        // Принемаем размер массива искомых значений
+        System.out.print("Введите количество искомых параметров: ");
+        someSerchValue = ReadingStringIntFile.readerConsolInt();
 
-        //setPropArray =  ReadingStringIntFile.readerConsolInt();
-
-        for (int i = 0; i < setPropArray.length; i++){
-
+        // Инициализируем arraylist иcкомыми значениями
+        for (int i = 0; i < someSerchValue; i++) {
+            System.out.print("Введите" + " " + (i + 1) + " " + "искомое значение в столбике: ");
+            serchValueArrayList.add(ReadingStringIntFile.readerConsolString());
         }
     }
 }
