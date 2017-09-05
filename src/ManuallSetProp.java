@@ -5,7 +5,8 @@ public class ManuallSetProp {
 
     // Размер массива искомых значений
     public static int someSerchValue;
-    // Массив искомых хначений, принемающий в виде размера значения someSerchValue введенные с консоли
+
+    // ArrayList искомых значений, принемающий в виде размера значения someSerchValue введенные с консоли
     public static ArrayList<String> serchValueArrayList = new ArrayList<>();
 
     public static void manuallInitArrayLenth() throws IOException {
@@ -18,5 +19,7 @@ public class ManuallSetProp {
             System.out.print("Введите" + " " + (i + 1) + " " + "искомое значение в столбике: ");
             serchValueArrayList.add(ReadingStringIntFile.readerConsolString());
         }
+        // Вызывается класс обрабатывающий файл
+        SortFile.sortFile();
     }
 }
