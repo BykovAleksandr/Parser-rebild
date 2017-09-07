@@ -20,6 +20,6 @@ public class ManuallSetProp {
             serchValueArrayList.add(ReadingStringIntFile.readerConsolString());
         }
         // Вызывается класс обрабатывающий файл
-        SortFile.sortFile();
+        SortFile.ReadAndSortFile();
     }
 }
