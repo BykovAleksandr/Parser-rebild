@@ -56,11 +56,10 @@ public class ReadingStringIntFile {
                 }
                 SortFile.sortedArraList.add(tmpString);
             }
+
         }
-        catch (IOException e)
-        {
+        catch (IOException e) {
             System.out.println("Файл не найден!");
         }
     }
-
 }
