@@ -13,6 +13,8 @@ public class SortFile {
 
 
     static void ReadAndSortFile() throws IOException {
+
+        // Клас меню вызов метода записывающего путь к файлу
         Menu.fileFolder();
 
         try {
@@ -35,10 +37,11 @@ public class SortFile {
                         }
                     }
                 }
+
                 // перебор массива на поиск пустых мест и заполнение их.
                 for (int i = 0; i < tmpArray.length; i++){
                     if (tmpArray[i] == null){
-                        tmpArray[i] = ManuallSetProp.serchValueArrayList.get(i).concat("-]"); // Изменить
+                        tmpArray[i] = ManuallSetProp.serchValueArrayList.get(i); // Изменить
                     }
                 }
                 // Конкатынация масива в одну строку

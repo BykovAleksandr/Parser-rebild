@@ -32,9 +32,9 @@ public class Menu {
         System.out.print("Через файл/в ручную (Да через файл/Нет в ручную)  (Д/Н): ");
         String inStringValue = ReadingStringIntFile.readerConsolString();
 
-        if (inStringValue.equalsIgnoreCase("Д") || inStringValue.equalsIgnoreCase("Y")) {
+        if (inStringValue.equalsIgnoreCase("Д") || inStringValue.equalsIgnoreCase("L")) {
             System.out.println("FromFileSetProp");
-        } else if (inStringValue.equalsIgnoreCase("Н") || inStringValue.equalsIgnoreCase("L")) {
+        } else if (inStringValue.equalsIgnoreCase("Н") || inStringValue.equalsIgnoreCase("Y")) {
             ManuallSetProp.manuallInitArrayLenth();
         } else {
             IdentifyYorN();
