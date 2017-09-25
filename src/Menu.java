@@ -2,6 +2,7 @@ import java.io.IOException;
 
 public class Menu {
     public static String fileFolder;
+    public static String fileFolderFromFile;
     // 1 Меню выбора метода
     static void choiceOfMethod() throws IOException {
         System.out.println("Укажите какой метод Вы выбрали: ");
@@ -33,7 +34,7 @@ public class Menu {
         String inStringValue = ReadingStringIntFile.readerConsolString();
 
         if (inStringValue.equalsIgnoreCase("Д") || inStringValue.equalsIgnoreCase("L")) {
-            System.out.println("FromFileSetProp");
+            //FromFileSetProp();
         } else if (inStringValue.equalsIgnoreCase("Н") || inStringValue.equalsIgnoreCase("Y")) {
             ManuallSetProp.manuallInitArrayLenth();
         } else {
@@ -47,5 +48,11 @@ public class Menu {
         System.out.print("Укажите путь к файлу и его имя ( res//test.txt ): ");
         fileFolder = ReadingStringIntFile.readerConsolString();
         return fileFolder;
+    }
+    // Укажите путь к файлу с искомыми значениями
+    public static String fromFileSetProp() throws IOException {
+        System.out.println("Укажите путь к файлу с искомыми значениями ( res//serchValues.txt): ");
+        fileFolderFromFile = ReadingStringIntFile.readerConsolString();
+        return fileFolderFromFile;
     }
 }
